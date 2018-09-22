@@ -1,8 +1,18 @@
+
+
+import os
 import face_recognition
 from PIL import Image
 
 image = face_recognition.load_image_file("test.jpg")
 face_locations = face_recognition.face_locations(image)
+
+def path_exists(path):
+    dir = os.path.dirname(path)
+    
+    if not os.path.exists(dir):
+        os.makedirs(dir)
+
 
 print ("I found {} face(s) in this photograph.".format(len(face_locations)))
 
