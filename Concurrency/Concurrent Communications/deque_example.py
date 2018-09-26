@@ -34,6 +34,6 @@ print "Elements removed from left pop."
 print "Deque: {}".format(doubleEndedQueue)
 
 #Inserting elements
-insertElements = doubleEndedQueue.insert(5,5)
-print "Inserting elements."
-print "Deque: {}".format(insertElements)
+#insertElements = doubleEndedQueue.insert(5,5)
+#print "Inserting elements."
+#print "Deque: {}".format(insertElements)
